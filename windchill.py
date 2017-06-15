@@ -1,4 +1,4 @@
-#
+# Skyler Kuhn
 # Creates a windchill table from a pre-determined range of temperatures and wind velocities
 filename = "windchill_output.txt"
 with open(filename,"w") as wind:
