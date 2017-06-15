@@ -1,7 +1,6 @@
 ###############################################################################
 # Skyler Kuhn
-# BNFO 601: Integrative Bioinformatics
-# Exam Question_1: Convert GenPept formatted file into a FASTA formatted File
+# Convert GenPept formatted file into a FASTA formatted File
 ###############################################################################
 
 from __future__ import print_function
