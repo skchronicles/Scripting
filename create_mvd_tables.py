@@ -1,3 +1,4 @@
+# Used for Database Normalization: Creates Multivalued Relations (4NF) from un-normalized data.
 from __future__ import print_function
 
 
@@ -38,31 +39,6 @@ if __name__ == "__main__":
         #print("\n")
         #print("#####################################")
     print("---------------done------------------")
-
-    """
-    # Checking to see why there is a decrapency between mvd_output and # of db rows in dbfile
-    # It has to do with distinct columns
-    inFH = open("/Users/nbskuhn/Desktop/SQL/uniq_reptiledb_mvd.txt")
-    outFH = open("/Users/nbskuhn/Desktop/SQL/ureptiledb_mvd_withoutQuotes.txt", "w")
-    for line in inFH:
-        linelist = line.strip(). split("\t")
-
-
-        if linelist[1].startswith('"') and linelist[1].endswith('"'):
-            mvd = linelist[1][1:-1]
-            outFH.write("{}\t{}\n".format(linelist[0], mvd))
-
-        elif linelist[1].startswith('"') and not linelist[1].endswith('"'):
-            mvd = linelist[1][:-1]
-            outFH.write("{}\t{}\n".format(linelist[0], mvd))
-
-        elif not linelist[1].startswith('"') and linelist[1].endswith('"'):
-            mvd = linelist[1][1:]
-            outFH.write("{}\t{}\n".format(linelist[0], mvd))
-
-        else:
-            outFH.write("{}\t{}\n".format(linelist[0], linelist[1]))
-    """
 
 
 
