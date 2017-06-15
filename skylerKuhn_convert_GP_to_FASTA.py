@@ -101,13 +101,7 @@ class Matches(object):
         self.nospace_seq = nospace_seq
         self.length = len(self.nospace_seq)
 
-    """
-    def __format__(self, seqformat):
-        if seqformat == 'fastaseq':
-            for i in range(0, self.length + 1, 64):
-                j = i + 64
-                print(seqformat[i:j])
-    """
+
 
     def __str__(self):
         return ">gi|{}|gb|{}| {}\n[{}]\n{}\n{} \n".format(self.gi_number, self.gb_number, self.annonation_dec,
