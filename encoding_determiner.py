@@ -1,3 +1,4 @@
+# Used to determine the encoding type of characters (file contained characters of multiple encoding schemes, huge head-ache)
 import pkgutil
 import os
 import encodings
