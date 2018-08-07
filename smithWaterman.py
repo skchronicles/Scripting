@@ -130,7 +130,7 @@ class smithwaterman (object):
         # than appending at the end. We are better off appending at the end, then reversing the whole mess when done.
 
         return_string = '\nBest alignment had a score of ' + str(highscore) + ' and is:\n\nTarget:\t' + \
-            str(j + 2) + '\t' + ''.join(best_t_alignment) + '\n\t\t\t'
+            str(j + 2) + '\t' + ''.join(best_t_alignment) + '\n\t\t'
 
         for k in range(len(best_t_alignment)):     # t and q alignments should be the same length!
 
